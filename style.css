@@ -1,0 +1,25 @@
+body{
+    background:black;
+    color:white;
+    text-align:center;
+    font-family:Arial;
+    padding-top:100px;
+}
+
+h1{
+    color:gold;
+    font-size:50px;
+}
+
+h2{
+    font-size:35px;
+}
+
+button{
+    background:gold;
+    color:black;
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-size:20px;
+}
