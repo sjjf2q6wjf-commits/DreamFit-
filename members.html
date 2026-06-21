@@ -1,54 +1,31 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>DreamFit Members</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<input type="text" id="memberName" placeholder="Member Name"><br><br>
 
-<header>
-    <h1>Member Registration</h1>
-</header>
+<input type="text" id="memberPhone" placeholder="Phone Number"><br><br>
 
-<section class="hero">
+<select id="memberPlan">
+    <option>Monthly - ₹800</option>
+    <option>Quarterly - ₹2400</option>
+    <option>Yearly</option>
+</select>
 
-    <input type="text" placeholder="Member Name"><br><br>
+<br><br>
 
-    <input type="text" placeholder="Phone Number"><br><br>
+<button onclick="addMember()">Add Member</button>
 
-    <input type="date"><br><br>
-
-    <select>
-        <option>Monthly - ₹800</option>
-        <option>Quarterly - ₹2400</option>
-        <option>Yearly</option>
-    </select>
-
-    <br><br>
-
-    <button>Add Member</button>
-    <h2>Members List</h2>
+<h2>Members List</h2>
 
 <table>
+<thead>
 <tr>
-    <th>Name</th>
-    <th>Phone</th>
-    <th>Plan</th>
+<th>Name</th>
+<th>Phone</th>
+<th>Plan</th>
 </tr>
+</thead>
 
-<tr>
-    <td>Sample Member</td>
-    <td>9876543210</td>
-    <td>Monthly</td>
-</tr>
+<tbody id="memberTable">
+</tbody>
 
 </table>
 
-</section>
-
-<footer>
-    <p>© 2026 DreamFit. All Rights Reserved.</p>
-</footer>
-
-</body>
-</html>
+<script src="script.js"></script>
